@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- Image View for displaying the artwork -->
+   
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="0dp"
@@ -18,7 +18,7 @@
         app:layout_constraintBottom_toTopOf="@id/titleTextView"
         app:layout_constraintDimensionRatio="1" />
 
-    <!-- Title of the artwork (large font) -->
+    
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="0dp"
@@ -32,7 +32,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:padding="8dp" />
 
-    <!-- Author of the artwork (bold) -->
+   
     <TextView
         android:id="@+id/authorTextView"
         android:layout_width="0dp"
@@ -46,7 +46,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:padding="4dp" />
 
-    <!-- Navigation Buttons -->
+  
     <LinearLayout
         android:id="@+id/linearLayoutButtons"
         android:layout_width="wrap_content"
