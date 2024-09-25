@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">ArtSpace</string>
-    <string name="previous">Previous</string>
-    <string name="artwork_image">Artwork Image</string>
-    <string name="artwork_description_will_appear_here">Artwork description will appear here</string>
-    <string name="next">Next</string>
-</resources>
