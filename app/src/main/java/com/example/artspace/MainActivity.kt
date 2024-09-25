@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
-    // Array of image resources
+   
     private val images = listOf(
         R.drawable.ar1,
         R.drawable.ar2,
@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         R.drawable.ar5
     )
 
-    // Array of titles (adjust the names as per your artwork)
+   
     private val titles = listOf(
         "Ophelia (1851-1852)",
         "Mad Tea Party (1969)",
@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         "Don Quixote (1955)"
     )
 
-    // Array of authors
+    
     private val authors = listOf(
         "Sir John Everett Millais",
         "Salvador Dalí",
@@ -35,24 +35,24 @@ class MainActivity : AppCompatActivity() {
         "Pablo Picasso"
     )
 
-    // Track the current image index
+    
     private var currentIndex = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Find views by their IDs
+     
         val imageView: ImageView = findViewById(R.id.imageView)
         val titleTextView: TextView = findViewById(R.id.titleTextView)
         val authorTextView: TextView = findViewById(R.id.authorTextView)
         val previousButton: Button = findViewById(R.id.previousButton)
         val nextButton: Button = findViewById(R.id.nextButton)
 
-        // Set the initial image, title, and author
+       
         updateContent(imageView, titleTextView, authorTextView)
 
-        // Previous button listener
+       
         previousButton.setOnClickListener {
             if (currentIndex > 0) {
                 currentIndex--
@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        // Next button listener
+       
         nextButton.setOnClickListener {
             if (currentIndex < images.size - 1) {
                 currentIndex++
@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    // Helper function to update the image, title, and author
+   
     private fun updateContent(imageView: ImageView, titleTextView: TextView, authorTextView: TextView) {
         imageView.setImageResource(images[currentIndex])
         titleTextView.text = titles[currentIndex]
